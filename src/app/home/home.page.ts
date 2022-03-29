@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+  nextPage(){
+    this.router.navigate([-this.nextPage])
+  }
 }
+
+

@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'zone-page',
+    loadChildren: () => import('./zone-page/zone-page.module').then( m => m.ZonePagePageModule)
+  },
 ];
 
 @NgModule({

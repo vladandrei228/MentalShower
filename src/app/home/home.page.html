@@ -1,20 +1,84 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Mental Shower </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Enter the room ID:</strong>
+    <div class="divlist">
+      <ion-grid style="width: 60%;">
+        <ion-row>
+          <ion-col>
+            <div>
+              <div>
+                <ion-list class="listIonic">
+                  <ion-item>
+                    <ion-label>Booking</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-select placeholder="Select One"  >
+                      <ion-select-option value="a" disabled="true"
+                        >A</ion-select-option
+                      >
+                      <ion-select-option value="b" disabled="true"
+                        >B</ion-select-option
+                      >
+                      <ion-select-option value="c" disabled="true"
+                        >C</ion-select-option
+                      >
+                      <ion-select-option value="d" disabled="false"
+                        >D</ion-select-option
+                      >
+                      <ion-select-option value="e" disabled="true"
+                        >E</ion-select-option
+                      >
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <div>
+                <ion-list class="listIonic">
+                  <ion-item>
+                    <ion-label>Floor</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-select placeholder="Select One">
+                      <ion-select-option value="1">1</ion-select-option>
+                      <ion-select-option value="2">2</ion-select-option>
+                      <ion-select-option value="3">3</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <div>
+                <ion-list class="listIonic">
+                  <ion-item>
+                    <ion-label>Room</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-select placeholder="Select One">
+                      <ion-select-option value="05">05</ion-select-option>
+                      <ion-select-option value="06">06</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <ion-button (click)="nextPage()">NEXT</ion-button>
   </div>
 </ion-content>
+
