@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'zone-page',
     loadChildren: () => import('./zone-page/zone-page.module').then( m => m.ZonePagePageModule)
   },
+  {
+    path: 'first-question',
+    loadChildren: () => import('./first-question/first-question.module').then( m => m.FirstQuestionPageModule)
+  },
+  {
+    path: 'second-question',
+    loadChildren: () => import('./second-question/second-question.module').then( m => m.SecondQuestionPageModule)
+  },
+  {
+    path: 'third-question',
+    loadChildren: () => import('./third-question/third-question.module').then( m => m.ThirdQuestionPageModule)
+  },
 ];
 
 @NgModule({

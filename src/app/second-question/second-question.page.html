@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>secondQuestion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container" class="answers">
+    <ion-list style="width: 60%; margin: auto">
+      <ion-radio-group value="biff">
+        <ion-list-header>
+          <ion-label>How do you feel right now? ( Air Quality )</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Very Fresh</ion-label>
+          <ion-radio slot="start" value="1"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Too Fresh</ion-label>
+          <ion-radio slot="start" value="2"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Fresh</ion-label>
+          <ion-radio slot="start" value="3"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Musty</ion-label>
+          <ion-radio slot="start" value="4"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Too Musty</ion-label>
+          <ion-radio slot="start" value="5"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Very Musty</ion-label>
+          <ion-radio slot="start" value="6"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-button>NEXT</ion-button>
+  </div>
+</ion-content>
+

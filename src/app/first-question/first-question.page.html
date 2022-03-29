@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>firstQuestion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container" class="answers">
+    <ion-list style="width: 60%; margin: auto">
+      <ion-radio-group value="biff">
+        <ion-list-header>
+          <ion-label>How do you feel right now? ( Temperature )</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Very Hot</ion-label>
+          <ion-radio slot="start" value="1"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Too Warm</ion-label>
+          <ion-radio slot="start" value="2"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Warm</ion-label>
+          <ion-radio slot="start" value="3"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Cold</ion-label>
+          <ion-radio slot="start" value="4"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Too Cold</ion-label>
+          <ion-radio slot="start" value="5"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Freezing</ion-label>
+          <ion-radio slot="start" value="6"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-button>NEXT</ion-button>
+  </div>
+</ion-content>
