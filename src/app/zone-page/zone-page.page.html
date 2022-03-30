@@ -4,3 +4,38 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content [fullscreen]="true">
+  <div >
+    <strong>Where are you sitting in the classroom ?</strong>
+    <div>
+      <ion-grid style="width: 50%">
+        <ion-row>
+          <ion-col>
+            <ion-button color="light" style="width: 100%; height: 150px">
+              1</ion-button
+            >
+          </ion-col>
+          <ion-col>
+            <ion-button color="light" style="width: 100%; height: 150px">
+              2</ion-button
+            >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="light" style="width: 100%; height: 150px">
+              3</ion-button
+            >
+          </ion-col>
+          <ion-col>
+            <ion-button color="light" style="width: 100%; height: 150px">
+              4</ion-button
+            >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <ion-button (click)="goBack()">NEXT</ion-button>
+    <ion-button (click)="goToQuestions()">NEXT</ion-button>
+  </div>
+</ion-content>
