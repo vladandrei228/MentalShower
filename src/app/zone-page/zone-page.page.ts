@@ -12,4 +12,8 @@ export class ZonePagePage implements OnInit {
   ngOnInit() {
   }
 
+  isValue: number = 0;
+
+  toggle(num) { this.isValue = num; }
+
 }

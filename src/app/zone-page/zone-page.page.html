@@ -5,32 +5,57 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div >
+  <div>
     <strong>Where are you sitting in the classroom ?</strong>
     <div>
       <ion-grid style="width: 50%">
         <ion-row>
           <ion-col>
-            <ion-button color="light" style="width: 100%; height: 150px">
-              1</ion-button
+            <button
+              [ngClass]="{ 'active' : isValue == 1 }"
+              (click)="toggle(1)"
+              type="button"
+              color="light"
+              style="width: 100%; height: 150px"
             >
+              
+            </button>
           </ion-col>
           <ion-col>
-            <ion-button color="light" style="width: 100%; height: 150px">
-              2</ion-button
+            <button
+              [ngClass]="{ 'active' : isValue == 2 }"
+              (click)="toggle(2)"
+              type="button"
+              color="light"
+              style="width: 100%; height: 150px"
             >
+              
+            </button>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-button color="light" style="width: 100%; height: 150px">
-              3</ion-button
+            <button
+              [ngClass]="{ 'active' : isValue == 3 }"
+              (click)="toggle(3)"
+              type="button"
+              color="light"
+              style="width: 100%; height: 150px"
             >
+              
+            </button>
           </ion-col>
           <ion-col>
-            <ion-button color="light" style="width: 100%; height: 150px">
-              4</ion-button
+            <button
+              class="btn btn-secondary"
+              [ngClass]="{ 'active' : isValue == 4 }"
+              (click)="toggle(4)"
+              type="button"
+              color="light"
+              style="width: 100%; height: 150px"
             >
+              
+            </button>
           </ion-col>
         </ion-row>
       </ion-grid>
