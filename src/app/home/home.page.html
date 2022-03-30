@@ -6,79 +6,114 @@
 
 <ion-content [fullscreen]="true">
   <div id="container">
-    <strong>Enter the room ID:</strong>
+    <strong>Select your class:</strong>
     <div class="divlist">
-      <ion-grid style="width: 60%;">
-        <ion-row>
-          <ion-col>
-            <div>
-              <div>
-                <ion-list>
-                  <ion-item>
-                    <ion-label>Booking</ion-label>
-                  </ion-item>
-                  <ion-item>
-                    <ion-select placeholder="Select One"  >
-                      <ion-select-option value="a" disabled="true"
-                        >A</ion-select-option
-                      >
-                      <ion-select-option value="b" disabled="true"
-                        >B</ion-select-option
-                      >
-                      <ion-select-option value="c" disabled="true"
-                        >C</ion-select-option
-                      >
-                      <ion-select-option value="d" disabled="false"
-                        >D</ion-select-option
-                      >
-                      <ion-select-option value="e" disabled="true"
-                        >E</ion-select-option
-                      >
-                    </ion-select>
-                  </ion-item>
-                </ion-list>
-              </div>
-            </div>
-          </ion-col>
-          <ion-col>
-            <div>
-              <div>
-                <ion-list>
-                  <ion-item>
-                    <ion-label>Floor</ion-label>
-                  </ion-item>
-                  <ion-item>
-                    <ion-select>
-                      <ion-select-option value="1">1</ion-select-option>
-                      <ion-select-option value="2">2</ion-select-option>
-                      <ion-select-option value="3">3</ion-select-option>
-                    </ion-select>
-                  </ion-item>
-                </ion-list>
-              </div>
-            </div>
-          </ion-col>
-          <ion-col>
-            <div>
-              <div>
-                <ion-list>
-                  <ion-item>
-                    <ion-label>Room</ion-label>
-                  </ion-item>
-                  <ion-item>
-                    <ion-select placeholder="Select One">
-                      <ion-select-option value="05">05</ion-select-option>
-                      <ion-select-option value="06">06</ion-select-option>
-                    </ion-select>
-                  </ion-item>
-                </ion-list>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+        <ion-select placeholder="Choose your class" class="selectClass">
+          <ion-select-option value="D.3.05" disabled="false">D.3.05</ion-select-option>
+          <ion-select-option value="D.3.06" disabled="false">D.3.06</ion-select-option>
+        </ion-select>
     </div>
+    <div class="selectZone">
+      <strong>Where are you sitting in the classroom ?</strong>
+      <div>
+        <ion-grid style="width: 35%">
+          <ion-row>
+            <ion-col>
+              <button
+                [ngClass]="{ 'active' : isValue == 1 }"
+                (click)="toggle(1)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+            <ion-col>
+              <button
+                [ngClass]="{ 'active' : isValue == 2 }"
+                (click)="toggle(2)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+            <ion-col>
+              <button
+                [ngClass]="{ 'active' : isValue == 3 }"
+                (click)="toggle(3)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+            <ion-col>
+              <button
+                [ngClass]="{ 'active' : isValue == 4 }"
+                (click)="toggle(4)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <button
+                [ngClass]="{ 'active' : isValue == 5 }"
+                (click)="toggle(5)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+            <ion-col>
+              <button
+                class="btn btn-secondary"
+                [ngClass]="{ 'active' : isValue == 6 }"
+                (click)="toggle(6)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+            <ion-col>
+              <button
+                [ngClass]="{ 'active' : isValue == 7 }"
+                (click)="toggle(7)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+            <ion-col>
+              <button
+                class="btn btn-secondary"
+                [ngClass]="{ 'active' : isValue == 8 }"
+                (click)="toggle(8)"
+                type="button"
+                color="light"
+                style="width: 150px; height: 150px"
+              >
+                
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     <ion-button (click)="nextPage()">NEXT</ion-button>
   </div>
+</div>
 </ion-content>
-
