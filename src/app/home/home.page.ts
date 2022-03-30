@@ -11,7 +11,7 @@ export class HomePage implements OnInit {
   constructor(private router: Router) {}
 
   nextPage(){
-    this.router.navigate(['zone-page'])
+    this.router.navigate(['first-question'])
   }
 
   ngOnInit() {
