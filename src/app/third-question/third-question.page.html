@@ -6,43 +6,47 @@
 
 <ion-content [fullscreen]="true">
   <div id="container" class="answers">
+    <h4 style="color:#999999;">Please describe how you experienced the indoor climate during the last hour.</h4>
+
     <ion-list style="width: 60%; margin: auto">
       <ion-radio-group value="biff">
         <ion-list-header>
-          <ion-label>How do you feel right now? ( Humidity )</ion-label>
+          <ion-label>How was the humidity?</ion-label>
         </ion-list-header>
 
-        <ion-item>
+        <ion-item class="color-13">
           <ion-label>Very Dry</ion-label>
           <ion-radio slot="start" value="1"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-14">
           <ion-label>Too Dry</ion-label>
           <ion-radio slot="start" value="2"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-15">
           <ion-label>Dry</ion-label>
           <ion-radio slot="start" value="3"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-16">
           <ion-label>Damp</ion-label>
           <ion-radio slot="start" value="4"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-17">
           <ion-label>Too Damp</ion-label>
           <ion-radio slot="start" value="5"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-18">
           <ion-label>Very Damp</ion-label>
           <ion-radio slot="start" value="6"></ion-radio>
         </ion-item>
       </ion-radio-group>
     </ion-list>
-    <ion-button color="success">SUBMIT</ion-button>
+<ion-button color="light" (click)="prevPage()" ><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
+<ion-button color="success">SUBMIT</ion-button>
   </div>
+
 </ion-content>

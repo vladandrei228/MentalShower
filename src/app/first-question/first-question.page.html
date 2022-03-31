@@ -6,42 +6,47 @@
 
 <ion-content [fullscreen]="true">
   <div id="container" class="answers">
+<h4 style="color:#999999;">Please describe how you experienced the indoor climate during the last hour.</h4>
+
+
     <ion-list style="width: 60%; margin: auto; background-color: transparent;">
       <ion-radio-group>
         <ion-list-header>
-          <ion-label>How do you feel right now? ( Temperature )</ion-label>
+          <ion-label>How was the temperature?</ion-label>
         </ion-list-header>
-        <ion-item>
-          <ion-label>Very Hot</ion-label>
+        <ion-item class="color-1">
+          <ion-label>Very warm</ion-label>
           <ion-radio slot="start" value="1"></ion-radio>
         </ion-item>
 
-        <ion-item>
-          <ion-label>Too Warm</ion-label>
+        <ion-item class="color-2">
+          <ion-label>A little warm</ion-label>
           <ion-radio slot="start" value="2"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-3">
           <ion-label>Warm</ion-label>
           <ion-radio slot="start" value="3"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-4">
           <ion-label>Cold</ion-label>
           <ion-radio slot="start" value="4"></ion-radio>
         </ion-item>
 
-        <ion-item>
-          <ion-label>Too Cold</ion-label>
+        <ion-item class="color-5">
+          <ion-label>A little cold</ion-label>
           <ion-radio slot="start" value="5"></ion-radio>
         </ion-item>
 
-        <ion-item>
-          <ion-label>Freezing</ion-label>
+        <ion-item class="color-6">
+          <ion-label>Very cold</ion-label>
           <ion-radio slot="start" value="6"></ion-radio>
         </ion-item>
       </ion-radio-group>
     </ion-list>
+    <ion-button color="light" (click)="prevPage()" ><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
+
     <ion-button (click)="nextPage()" >NEXT</ion-button>
   </div>
 </ion-content>

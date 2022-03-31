@@ -6,43 +6,46 @@
 
 <ion-content [fullscreen]="true">
   <div id="container" class="answers">
+    <h4 style="color:#999999;">Please describe how you experienced the indoor climate during the last hour.</h4>
+
     <ion-list style="width: 60%; margin: auto">
       <ion-radio-group value="biff">
         <ion-list-header>
-          <ion-label>How do you feel right now? ( Air Quality )</ion-label>
+          <ion-label>How was the air quality?</ion-label>
         </ion-list-header>
 
-        <ion-item>
+        <ion-item class="color-7">
           <ion-label>Very Fresh</ion-label>
           <ion-radio slot="start" value="1"></ion-radio>
         </ion-item>
 
-        <ion-item>
-          <ion-label>Too Fresh</ion-label>
+        <ion-item class="color-8">
+          <ion-label>Fresh enough</ion-label>
           <ion-radio slot="start" value="2"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-9">
           <ion-label>Fresh</ion-label>
           <ion-radio slot="start" value="3"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-10">
           <ion-label>Musty</ion-label>
           <ion-radio slot="start" value="4"></ion-radio>
         </ion-item>
 
-        <ion-item>
-          <ion-label>Too Musty</ion-label>
+        <ion-item class="color-11">
+          <ion-label>A little musty</ion-label>
           <ion-radio slot="start" value="5"></ion-radio>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="color-12">
           <ion-label>Very Musty</ion-label>
           <ion-radio slot="start" value="6"></ion-radio>
         </ion-item>
       </ion-radio-group>
     </ion-list>
+    <ion-button color="light" (click)="prevPage()" ><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
     <ion-button (click)="nextPage()" >NEXT</ion-button>
   </div>
 </ion-content>

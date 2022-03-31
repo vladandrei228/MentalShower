@@ -13,10 +13,11 @@
                 <ion-select-option value="D.3.06" disabled="false">D.3.06</ion-select-option>
             </ion-select>
         </div>
+
         <div class="selectZone">
             <strong>Where are you sitting in the classroom ?</strong>
             <div>
-                <ion-grid style="width: 35%">
+                <ion-grid>
                     <ion-row>
                         <ion-col>
                             <button [ngClass]="{ 'active' : isValue == 1 }" (click)="toggle(1)" type="button" color="light" style="width: 150px; height: 150px"></button>

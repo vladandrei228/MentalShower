@@ -24,3 +24,148 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+
+ion-list-header {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  ion-item {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff;
+  }
+  ion-item.color-1 {
+    --ion-background-color: #fd0c0d !important;
+
+
+  }
+
+  ion-item.color-2 {
+    --ion-background-color: #dd495b !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-3 {
+    --ion-background-color: #b95f88 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-4 {
+    --ion-background-color: #8b6ab7 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-5 {
+    --ion-background-color: #5f6bdd !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-6 {
+    --ion-background-color: #2267fd !important;
+    color: #ffffff !important;
+
+  }
+
+
+
+  ion-item.color-7 {
+    --ion-background-color: #b4eca3 !important;
+
+
+  }
+
+  ion-item.color-8 {
+    --ion-background-color: #b3df8e !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-9 {
+    --ion-background-color: #b0cf77 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-10 {
+    --ion-background-color: #acbd59 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-11 {
+    --ion-background-color: #a9ae3e !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-12 {
+    --ion-background-color: #a6a21f !important;
+    color: #ffffff !important;
+
+  }
+
+
+  
+  ion-item.color-13 {
+    --ion-background-color: #ee8c1d !important;
+
+
+  }
+
+  ion-item.color-14 {
+    --ion-background-color: #cd8b42 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-15 {
+    --ion-background-color: #ad8854 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-16 {
+    --ion-background-color: #7e8267 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-17 {
+    --ion-background-color: #537b71 !important;
+    color: #ffffff !important;
+
+  }
+
+
+  ion-item.color-18 {
+    --ion-background-color: #1b7479 !important;
+    color: #ffffff !important;
+
+  }
+
+
+
+  ion-list-header {
+      font-size: 1.2rem;
+      padding: 0;
+  }
