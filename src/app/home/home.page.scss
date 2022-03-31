@@ -1,43 +1,42 @@
 #container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 #container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
 }
 
 #container a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .divlist {
-  margin: auto;
-  width: 300px;
+    margin: auto;
+    width: 300px;
 }
 
 .selectClass {
-  background-color: transparentize($color: #89A26C, $amount: 0);
-  border-radius: 25px;
+    background-color: transparentize($color: #89A26C, $amount: 0);
+    border-radius: 25px;
 }
 
 .selectZone {
-  margin-top: 100px;
+    margin-top: 50px;
 }
 
-.active { background-color: gray; }
+.active {
+    background-color: gray;
+}
