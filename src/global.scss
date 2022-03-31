@@ -27,7 +27,19 @@
 
 
 
+:root {
+  --ion-color-light: #ffffff;
+  --ion-color-light-rgb: 0, 102, 0;
+  --ion-color-light-contrast: #ffffff;
+  --ion-color-light-contrast-rgb: 255, 255, 255;
+  --ion-color-light-shade: #005a00;
+  --ion-color-light-tint: #1a751a;
+}
 
+
+.item-radio-checked {
+  border: 2px solid #000000;
+}
 
 ion-list-header {
     font-size: 2rem;
@@ -37,7 +49,7 @@ ion-list-header {
 
   ion-item {
     color: #ffffff !important;
-    border-bottom: 2px solid #ffffff;
+    border: 2px solid #ffffff;
   }
   ion-item.color-1 {
     --ion-background-color: #fd0c0d !important;

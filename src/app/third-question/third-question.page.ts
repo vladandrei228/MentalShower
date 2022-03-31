@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-third-question',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThirdQuestionPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+
+
+  prevPage(){
+    this.router.navigate(['second-question'])
+  }
 
   ngOnInit() {
   }

@@ -17,4 +17,8 @@ export class SecondQuestionPage implements OnInit {
     this.router.navigate(['third-question'])
   }
 
+  prevPage(){
+    this.router.navigate(['first-question'])
+  }
+
 }

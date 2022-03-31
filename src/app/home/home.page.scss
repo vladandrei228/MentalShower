@@ -1,27 +1,63 @@
 #container {
     text-align: center;
-    position: absolute;
+ /*   position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+*/
 }
 
-#container strong {
-    font-size: 20px;
-    line-height: 26px;
+.main-description {
+    background-color: #bbeeeb;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.image-classroom-top, .image-classroom-bottom, .classroom-grid {
+    width: 50%;
+    display:block;
+    margin: auto;
+    
+}
+.classroom-grid {
+    padding: 2rem;
 }
 
-#container p {
-    font-size: 16px;
-    line-height: 22px;
-    color: #8c8c8c;
-    margin: 0;
+.classroom-grid ion-button {
+    width: 100%;
+    height: 100%;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #000000;
+    --background-hover: var(--background);
+
+
 }
 
-#container a {
-    text-decoration: none;
+.classroom-grid ion-button .checkmark {
+    color: #000000;
+    visibility: hidden;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
+
+
+.classroom-grid ion-button.active .checkmark {
+    color: #000000;
+    visibility: visible;
+}
+
+.classroom-grid {
+    background-image: url('/assets/classroom-sides.png');
+    background-size: 100%;
+}
+
+
+
+
 
 .divlist {
     margin: auto;
@@ -29,14 +65,13 @@
 }
 
 .selectClass {
-    background-color: transparentize($color: #89A26C, $amount: 0);
-    border-radius: 25px;
+ /*   background-color: transparentize($color: #89A26C, $amount: 0);
+    border-radius: 25px;*/
+    border: 1px solid #999999;
+    border-radius: 15px;
+    padding: 1rem;
 }
 
 .selectZone {
     margin-top: 50px;
-}
-
-.active {
-    background-color: gray;
 }
