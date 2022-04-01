@@ -10,21 +10,21 @@
 
 
     <ion-list style="width: 60%; margin: auto; background-color: transparent;">
-      <ion-radio-group>
+      <ion-radio-group id="temperature">
         <ion-list-header>
           <ion-label>How was the temperature?</ion-label>
         </ion-list-header>
-        <ion-item class="color-1">
+        <ion-item class="color-1" (click)="GetTemperature(1)">
           <ion-label>Very warm</ion-label>
           <ion-radio slot="start" value="1" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
-        <ion-item class="color-2">
+        <ion-item class="color-2" (click)="GetTemperature(2)">
           <ion-label>A little warm</ion-label>
           <ion-radio slot="start" value="2" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
-        <ion-item class="color-3">
+        <ion-item class="color-3" (click)="GetTemperature(3)">
           <ion-label>Warm</ion-label>
           <ion-radio slot="start" value="3" (click)="enableBtn()" ></ion-radio>
         </ion-item>
@@ -45,7 +45,8 @@
         </ion-item>
       </ion-radio-group>
     </ion-list>
-    <ion-button color="medium" (click)="prevPage()" ><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
+    <ion-button color="medium" (click)="prevPage()"><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
+  
 
     <ion-button (click)="nextPage()" [disabled]="btnDisabled"  >NEXT</ion-button>
   </div>

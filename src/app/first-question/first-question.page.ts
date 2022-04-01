@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AbstractExtendedWebDriver } from 'protractor/built/browser';
 
 @Component({
   selector: 'app-first-question',
@@ -13,9 +14,18 @@ export class FirstQuestionPage implements OnInit {
   ngOnInit() {
   }
 
+public temperature:number = 0;
+  GetTemperature(value){
+this.temperature = value;
+  }
+
+
   nextPage(){
     this.router.navigate(['second-question'])
+
   }
+
+
   btnDisabled = true;
 
   enableBtn() {

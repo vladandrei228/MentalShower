@@ -85,6 +85,26 @@ const routes: Routes &#x3D; [
     redirectTo: &#x27;home&#x27;,
     pathMatch: &#x27;full&#x27;
   },
+  {
+    path: &#x27;zone-page&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./zone-page/zone-page.module&#x27;).then( m &#x3D;&gt; m.ZonePagePageModule)&quot;
+  },
+  {
+    path: &#x27;first-question&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./first-question/first-question.module&#x27;).then( m &#x3D;&gt; m.FirstQuestionPageModule)&quot;
+  },
+  {
+    path: &#x27;second-question&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./second-question/second-question.module&#x27;).then( m &#x3D;&gt; m.SecondQuestionPageModule)&quot;
+  },
+  {
+    path: &#x27;third-question&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./third-question/third-question.module&#x27;).then( m &#x3D;&gt; m.ThirdQuestionPageModule)&quot;
+  },
+  {
+    path: &#x27;thank-you&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./thank-you/thank-you.module&#x27;).then( m &#x3D;&gt; m.thankyouPageModule)&quot;
+  },
 ];
 
 @NgModule({

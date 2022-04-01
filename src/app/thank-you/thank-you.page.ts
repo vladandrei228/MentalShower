@@ -21,4 +21,5 @@ export class thankyouPage implements OnInit {
     this.router.navigate(['home'])
   }
 
+
 }

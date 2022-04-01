@@ -11,11 +11,15 @@ export class SecondQuestionPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+
   }
   
   nextPage(){
     this.router.navigate(['third-question'])
   }
+
+
+
 
   prevPage(){
     this.router.navigate(['first-question'])
