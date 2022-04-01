@@ -20,110 +20,108 @@
 
     <p><strong>Please choose which classroom you are in:</strong></p>
     <div class="divlist">
-      <ion-select placeholder="Choose your class" class="selectClass">
-        <ion-select-option value="D.3.05" disabled="false"
-          >D.3.05</ion-select-option
-        >
-        <ion-select-option value="D.3.06" disabled="false"
-          >D.3.06</ion-select-option
-        >
-      </ion-select>
+      <ion-button (click)="showZone()"> D.3.05 </ion-button>
+      <ion-button (click)="showZone()"> D.3.06 </ion-button>
     </div>
+    <div *ngIf="show == true" >
+      <div class="selectZone">
+        <p>
+          <strong
+            >Please choose which area of the classroom you are sitting
+            in:</strong
+          >
+        </p>
+        <img src="assets/classroom-top.png" class="image-classroom-top" />
 
-    <div class="selectZone">
-      <p>
-        <strong
-          >Please choose which area of the classroom you are sitting in:</strong
-        >
-      </p>
-      <img src="assets/classroom-top.png" class="image-classroom-top" />
-
-      <div>
-        <ion-grid class="classroom-grid">
-          <ion-row>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 1 }"
-                (click)="toggle(1)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 2 }"
-                (click)="toggle(2)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 3 }"
-                (click)="toggle(3)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 4 }"
-                (click)="toggle(4)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 5 }"
-                (click)="toggle(5)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 6 }"
-                (click)="toggle(6)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 7 }"
-                (click)="toggle(7)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-            <ion-col size="3">
-              <ion-button
-                [ngClass]="{ 'active' : isValue == 8 }"
-                (click)="toggle(8)"
-                type="button"
-                color="light"
-                ><span class="checkmark">&check;</span></ion-button
-              >
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+        <div>
+          <ion-grid class="classroom-grid">
+            <ion-row>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 1 }"
+                  (click)="toggle(1)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 2 }"
+                  (click)="toggle(2)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 3 }"
+                  (click)="toggle(3)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 4 }"
+                  (click)="toggle(4)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 5 }"
+                  (click)="toggle(5)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 6 }"
+                  (click)="toggle(6)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 7 }"
+                  (click)="toggle(7)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+              <ion-col size="3">
+                <ion-button
+                  [ngClass]="{ 'active' : isValue == 8 }"
+                  (click)="toggle(8)"
+                  type="button"
+                  color="light"
+                  ><span class="checkmark">&check;</span></ion-button
+                >
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
       </div>
-    </div>
 
-    <img src="assets/classroom-bottom.png" class="image-classroom-bottom" />
-    <ion-button [disabled]="btnDisabled"  (click)="nextPage()">NEXT</ion-button>
-    <p>&nbsp;</p>
-    <p></p>
-    <p>&nbsp;</p>
+      <img src="assets/classroom-bottom.png" class="image-classroom-bottom" />
+      <ion-button [disabled]="btnDisabled" (click)="nextPage()"
+        >NEXT</ion-button
+      >
+      <p>&nbsp;</p>
+      <p></p>
+      <p>&nbsp;</p>
+    </div>
   </div>
 </ion-content>
