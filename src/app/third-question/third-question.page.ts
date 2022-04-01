@@ -16,6 +16,13 @@ export class ThirdQuestionPage implements OnInit {
     this.router.navigate(['second-question'])
   }
 
+    
+  nextPage(){
+    this.router.navigate(['thank-you'])
+  }
+
+
+
   ngOnInit() {
   }
 

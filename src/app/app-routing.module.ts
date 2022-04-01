@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'third-question',
     loadChildren: () => import('./third-question/third-question.module').then( m => m.ThirdQuestionPageModule)
   },
+  {
+    path: 'thank-you',
+    loadChildren: () => import('./thank-you/thank-you.module').then( m => m.thankyouPageModule)
+  },
 ];
 
 @NgModule({
