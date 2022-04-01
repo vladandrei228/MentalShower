@@ -23,6 +23,11 @@ export class HomePage implements OnInit {
   showZone() {
     this.show = true;
   }
+
+  showRoom(roomID) {
+    this.show = roomID;
+  }
+
   toggle(num) { this.isValue = num; this.btnDisabled = false; }
 }
 
