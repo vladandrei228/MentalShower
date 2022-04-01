@@ -16,6 +16,11 @@ export class FirstQuestionPage implements OnInit {
   nextPage(){
     this.router.navigate(['second-question'])
   }
+  btnDisabled = true;
+
+  enableBtn() {
+    this.btnDisabled = false;
+  }
 
   prevPage(){
     this.router.navigate(['home'])

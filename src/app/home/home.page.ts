@@ -13,13 +13,14 @@ export class HomePage implements OnInit {
   nextPage(){
     this.router.navigate(['first-question'])
   }
-
+  
   ngOnInit() {
   }
 
   isValue: number = 0;
+  btnDisabled = true;
 
-  toggle(num) { this.isValue = num; }
+  toggle(num) { this.isValue = num; this.btnDisabled = false; }
 }
 
 

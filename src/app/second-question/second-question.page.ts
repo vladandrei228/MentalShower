@@ -21,4 +21,10 @@ export class SecondQuestionPage implements OnInit {
     this.router.navigate(['first-question'])
   }
 
+  btnDisabled = true;
+
+  enableBtn() {
+    this.btnDisabled = false;
+  }
+
 }

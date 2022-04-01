@@ -16,37 +16,37 @@
 
         <ion-item class="color-7">
           <ion-label>Very Fresh</ion-label>
-          <ion-radio slot="start" value="1"></ion-radio>
+          <ion-radio slot="start" value="1" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-8">
           <ion-label>Fresh enough</ion-label>
-          <ion-radio slot="start" value="2"></ion-radio>
+          <ion-radio slot="start" value="2" (click)="enableBtn()"></ion-radio>
         </ion-item>
 
         <ion-item class="color-9">
           <ion-label>Fresh</ion-label>
-          <ion-radio slot="start" value="3"></ion-radio>
+          <ion-radio slot="start" value="3" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-10">
           <ion-label>Musty</ion-label>
-          <ion-radio slot="start" value="4"></ion-radio>
+          <ion-radio slot="start" value="4" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-11">
           <ion-label>A little musty</ion-label>
-          <ion-radio slot="start" value="5"></ion-radio>
+          <ion-radio slot="start" value="5" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-12">
           <ion-label>Very Musty</ion-label>
-          <ion-radio slot="start" value="6"></ion-radio>
+          <ion-radio slot="start" value="6" (click)="enableBtn()" ></ion-radio>
         </ion-item>
       </ion-radio-group>
     </ion-list>
     <ion-button color="medium" (click)="prevPage()" ><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
-    <ion-button (click)="nextPage()" >NEXT</ion-button>
+    <ion-button (click)="nextPage()" [disabled]="btnDisabled"  >NEXT</ion-button>
   </div>
 </ion-content>
 

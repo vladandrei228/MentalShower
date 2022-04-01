@@ -16,37 +16,37 @@
 
         <ion-item class="color-13">
           <ion-label>Very Dry</ion-label>
-          <ion-radio slot="start" value="1"></ion-radio>
+          <ion-radio slot="start" value="1" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-14">
           <ion-label>Too Dry</ion-label>
-          <ion-radio slot="start" value="2"></ion-radio>
+          <ion-radio slot="start" value="2" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-15">
           <ion-label>Dry</ion-label>
-          <ion-radio slot="start" value="3"></ion-radio>
+          <ion-radio slot="start" value="3" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-16">
           <ion-label>Damp</ion-label>
-          <ion-radio slot="start" value="4"></ion-radio>
+          <ion-radio slot="start" value="4" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-17">
           <ion-label>Too Damp</ion-label>
-          <ion-radio slot="start" value="5"></ion-radio>
+          <ion-radio slot="start" value="5" (click)="enableBtn()" ></ion-radio>
         </ion-item>
 
         <ion-item class="color-18">
           <ion-label>Very Damp</ion-label>
-          <ion-radio slot="start" value="6"></ion-radio>
+          <ion-radio slot="start" value="6" (click)="enableBtn()" ></ion-radio>
         </ion-item>
       </ion-radio-group>
     </ion-list>
 <ion-button color="medium" (click)="prevPage()" ><ion-icon name="arrow-back"></ion-icon> Previous</ion-button>
-<ion-button color="success" (click)="nextPage()">SUBMIT</ion-button>
+<ion-button color="success" (click)="nextPage()" [disabled]="btnDisabled" >SUBMIT</ion-button>
   </div>
 
 </ion-content>

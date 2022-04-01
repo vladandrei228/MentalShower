@@ -20,6 +20,11 @@ export class ThirdQuestionPage implements OnInit {
   nextPage(){
     this.router.navigate(['thank-you'])
   }
+  btnDisabled = true;
+
+  enableBtn() {
+    this.btnDisabled = false;
+  }
 
 
 
