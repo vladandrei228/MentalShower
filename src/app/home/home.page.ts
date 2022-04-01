@@ -19,11 +19,8 @@ export class HomePage implements OnInit {
 
   isValue: number = 0;
   btnDisabled = true;
-  show = false;
-  showZone() {
-    this.show = true;
-  }
 
+show:string = "";
   showRoom(roomID) {
     this.show = roomID;
   }
