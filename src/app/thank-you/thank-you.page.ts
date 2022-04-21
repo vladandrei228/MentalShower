@@ -8,9 +8,18 @@ import { Router } from '@angular/router';
 })
 export class thankyouPage implements OnInit {
 
+  answerZone:number;
+
   constructor(private router: Router) { }
 
+
+
   ngOnInit() {
+   this.answerZone = parseInt(localStorage.getItem('zoneSelection'));
+
+
+
+
   }
 
   nextPage(){

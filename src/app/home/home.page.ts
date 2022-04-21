@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage implements OnInit {
 
   constructor(private router: Router) {}
@@ -14,8 +15,7 @@ export class HomePage implements OnInit {
     this.router.navigate(['first-question'])
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   isValue: number = 0;
   btnDisabled = true;
@@ -25,7 +25,40 @@ show:string = "";
     this.show = roomID;
   }
 
-  toggle(num) { this.isValue = num; this.btnDisabled = false; }
+
+  toggle(num) { this.isValue = num; this.btnDisabled = false; 
+  
+  localStorage.setItem('zoneSelection', num);
+
+//  console.log(localStorage.getItem('zoneSelection'));
+
+  }
+
+
+
+
+ 
 }
+
+
+/*
+class Test {
+ greeting: string = "hello world!";
+
+  mult(a, b) {
+    return a*b;
+  }
+
+}
+*/
+
+class User {
+  id: number;
+  zone: number;
+  temperature: number;
+  airQuality: number;
+  humidity: number;
+}
+
 
 
