@@ -41,24 +41,6 @@ show:string = "";
 }
 
 
-/*
-class Test {
- greeting: string = "hello world!";
-
-  mult(a, b) {
-    return a*b;
-  }
-
-}
-*/
-
-class User {
-  id: number;
-  zone: number;
-  temperature: number;
-  airQuality: number;
-  humidity: number;
-}
 
 
 
