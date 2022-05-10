@@ -1,14 +1,16 @@
 {
-    "hosting": {
-        "public": "src/app/home",
-        "ignore": [
-            "firebase.json",
-            "**/.*",
-            "**/node_modules/**"
-        ],
-        "rewrites": [{
-            "source": "**",
-            "destination": "src/app/home/home.page.html"
-        }]
-    }
+  "hosting": {
+    "public": "www",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }
